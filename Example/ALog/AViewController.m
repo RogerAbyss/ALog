@@ -7,6 +7,7 @@
 //
 
 #import "AViewController.h"
+#import <ALog/ALog.h>
 
 @interface AViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    Log(@"嘿嘿".emojiBug)
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
