@@ -19,7 +19,8 @@ before_install:
   - bundle install --gemfile=Example/Gemfile
   - bundle exec pod install --project-directory=Example
 script:
-  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/AocFirPatcher.xcworkspace -scheme AocFirPatcher-Example -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.2' ONLY_ACTIVE_ARCH=NO | xcpretty
+  - set -o pipefail
+  - bundle exec fastlane scan
   - bundle exec fastlane lib_lint
   - bundle exec jazzy --config jazzy.yaml
 after_success:

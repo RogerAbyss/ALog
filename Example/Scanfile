@@ -1,0 +1,5 @@
+scheme "ALog-Example"
+devices ["iPhone 6s"]
+clean true
+
+output_types "html"

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='ALog_Tests.xctest' tests='4' failures='0'>
+  <testsuite name='AViewControllerSpec' tests='4' failures='0'>
+    <testcase classname='AViewControllerSpec' name='test_ALog打印测试__打印message' time='0.020'/>
+    <testcase classname='AViewControllerSpec' name='test_ALog打印测试__打印对象' time='0.003'/>
+    <testcase classname='AViewControllerSpec' name='test_ALog打印测试__打印emoji' time='0.003'/>
+    <testcase classname='AViewControllerSpec' name='test_ALog打印测试__打印错误类型' time='0.003'/>
+  </testsuite>
+</testsuites>

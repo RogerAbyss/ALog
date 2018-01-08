@@ -1,0 +1,24 @@
+# Fastfile 
+# Copyright@2017 Abyss
+
+fastlane_version "2.69.2"
+default_platform :ios
+
+platform :ios do
+
+	before_all do
+	end
+
+	desc '测试版'
+	lane :dev do |options|
+	end
+
+	import_from_git(
+		url: 'https://github.com/RogerAbyss/fastlane.git', 
+		branch: '0.0.3',
+		path: 'fastlane/IOSLibFastfile'
+	  )
+
+	after_all do
+	end
+end
