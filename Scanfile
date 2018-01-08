@@ -1,4 +1,5 @@
 scheme "ALog-Example"
+workspace "Example/ALog.xcworkspace"
 devices ["iPhone 6s"]
 clean true
 
