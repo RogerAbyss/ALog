@@ -7,8 +7,7 @@ target 'ALog_Example' do
     inherit! :search_paths
 
     pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
+    pod 'Expecta'
+    pod 'Expecta+Snapshots'
   end
 end

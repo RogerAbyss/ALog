@@ -16,7 +16,7 @@
 typedef NS_ENUM(NSUInteger, Emoji)
 {
     /** bug **/
-    Emoji_Bug,
+    EmojiBug,
 };
 
 @interface NSString (emoji)

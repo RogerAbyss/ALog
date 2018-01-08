@@ -7,42 +7,46 @@
 //
 
 // https://github.com/Specta/Specta
+#import <Specta/Specta.h>
+#import <ALog/ALog.h>
 
-SpecBegin(InitialSpecs)
+SpecBegin(AViewController)
 
-describe(@"these will fail", ^{
-
-    it(@"can do maths", ^{
-        expect(1).to.equal(2);
-    });
-
-    it(@"can read", ^{
-        expect(@"number").to.equal(@"string");
-    });
+describe(@"ALog打印测试", ^{
     
-    it(@"will wait for 10 seconds and fail", ^{
-        waitUntil(^(DoneCallback done) {
+    it(@"打印message", ^{
+        NSLog(@"打印message\n\n");
         
-        });
-    });
-});
-
-describe(@"these will pass", ^{
-    
-    it(@"can do maths", ^{
-        expect(1).beLessThan(23);
+        Log(@"我是一个message")
     });
     
-    it(@"can read", ^{
-        expect(@"team").toNot.contain(@"I");
+    it(@"打印对象", ^{
+        NSLog(@"打印对象\n\n");
+        
+        NSString* obj1 = @"我是字符串对象";
+        NSArray* obj2 = @[@"hello",@"我是数组对象"];
+        NSDictionary* obj3 = @{@"key":@"value",
+                               @"hello":@"我是字典对象"
+                               };
+        Log(obj1)
+        Log(obj2)
+        Log(obj3)
     });
     
-    it(@"will wait and succeed", ^{
-        waitUntil(^(DoneCallback done) {
-            done();
-        });
+    it(@"打印emoji", ^{
+        NSLog(@"打印emoji\n\n");
+        
+        Log(@"打印emoji-bug".emojiBug)
+        Log(@"打印emoji-:bug::bug:".emojiString)
+    });
+    
+    it(@"打印错误类型", ^{
+        NSLog(@"打印错误类型\n\n");
+        
+        Log(nil)
     });
 });
 
 SpecEnd
+
 

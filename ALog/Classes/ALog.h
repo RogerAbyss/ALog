@@ -6,14 +6,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#define Log(_message_) [ALog ALogMessage:_message_];
+#if DEBUG
+    #define Log(_smt_) [ALog ALogSomething:_smt_];
+#else
+    #define Log(_smt_)
+#endif
 #import "NSString+Emoji.h"
 
 /**
  # ALog
  ```
- 打印详细日志, 支持emoji！！
+ 打印详细日志
  ```
+ - [x]支持emoji
+ - [x]支持原生类型输出utf8
+ - [x]debug下运行, 性能第一
  
  ## 关于内存消耗
  
@@ -40,7 +47,7 @@
  通常使用宏 Log()方式调用比较美观
  ```
  */
-+ (instancetype)ALogMessage:(NSString *)message;
++ (instancetype)ALogSomething:(id)something;
 
 /**
  打印

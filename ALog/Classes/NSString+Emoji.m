@@ -16,7 +16,7 @@
     
     switch (emoji)
     {
-        case Emoji_Bug:
+        case EmojiBug:
             emojiString = @":bug: ";
             break;
             
@@ -97,7 +97,7 @@
 
 - (NSString *)emojiBug
 {
-    return [self emoji:Emoji_Bug];
+    return [self emoji:EmojiBug];
 }
 
 @end
