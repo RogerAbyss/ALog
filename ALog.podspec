@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ALog'
   s.version          = '0.1.0'
-  s.summary          = 'Log日志系统'
+  s.summary          = 'Abyss`s Log 日志系统'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  # Log日志系统
+  # Abyss`s Log
 
   - [x]支持emoji
   - [x]支持原生类型输出utf8
