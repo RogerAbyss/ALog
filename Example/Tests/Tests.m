@@ -10,7 +10,7 @@
 #import <Specta/Specta.h>
 #import <ALog/ALog.h>
 
-SpecBegin(AViewController)
+SpecBegin(ALogTest)
 
 describe(@"ALog打印测试", ^{
     
