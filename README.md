@@ -14,10 +14,10 @@
 
 ## Introduction
 
- - [x]支持emoji:ok_hand::ok_hand:
- - [x]支持原生类型输出utf8
- - [x]debug下运行, 性能第一
- - [x][详细文档](https://github.com/RogerAbyss/ALog/tree/master/docs)
+ - [x] emoji支持! 👌👌
+ - [x] utf8支持! 中文输出日志
+ - [x] 性能第一! debug下运行
+ - [x] 详细的文档! 文档
 
 ## Example
 
