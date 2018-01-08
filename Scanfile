@@ -1,6 +1,7 @@
 scheme "ALog-Example"
 workspace "Example/ALog.xcworkspace"
 devices ["iPhone 6s"]
+code_coverage true
 clean true
 
 output_types "html"

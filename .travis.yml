@@ -25,3 +25,4 @@ script:
   - bundle exec jazzy --config jazzy.yaml
 after_success:
   - bundle exec fastlane lib_push
+  - bash <(curl -s https://codecov.io/bash)
