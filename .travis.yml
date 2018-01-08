@@ -1,14 +1,26 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
-osx_image: xcode7.3
+osx_image: xcode9.2
 language: objective-c
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+cache:
+  cocoapods: true
+  bundler: true
+  directories:
+    - /home/travis/.rvm/
+podfile: Example/Podfile
+gemfile: Example/Gemfile
+branches:
+  only:
+    - master
+before_install:
+  - openssl aes-256-cbc -K $encrypted_d6d0cd6f6f44_key -iv $encrypted_d6d0cd6f6f44_iv -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
+  - sh ssh.sh
+  - gem install bundler --no-rdoc --no-ri --no-document --quiet
+  - gem install fastlane --no-rdoc --no-ri --no-document --quiet
+  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet # Since Travis is not always on latest version
+  - bundle install --gemfile=Example/Gemfile
+  - bundle exec pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/ALog.xcworkspace -scheme ALog-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint
+  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/AocFirPatcher.xcworkspace -scheme AocFirPatcher-Example -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.2' ONLY_ACTIVE_ARCH=NO | xcpretty
+  - bundle exec fastlane lib_lint
+  - bundle exec jazzy --config jazzy.yaml
+after_success:
+  - bundle exec fastlane lib_push
