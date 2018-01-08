@@ -21,35 +21,31 @@
 
 @implementation ALog
 
-+ (instancetype)ALogSomething:(id)something
+- (void)echo:(NSString *)something;
 {
     NSString       *sourceString = [[NSThread callStackSymbols] objectAtIndex:1];
     NSCharacterSet *separatorSet = [NSCharacterSet characterSetWithCharactersInString:@" -[]+?.,"];
     NSMutableArray *array        = [NSMutableArray arrayWithArray:[sourceString  componentsSeparatedByCharactersInSet:separatorSet]];
     [array removeObject:@""];
-    
-    ALog* log = [ALog new];
 
     if ([something isKindOfClass:[NSString class]]) {
-        log.message = something;
+        self.message = something;
     } else {
         
         @try {
-            log.message = [[something description] UTF8encoding];
+            self.message = [[something description] UTF8encoding];
         } @catch (NSException *exception) {
             NSLog(@"%@",exception);
             NSLog(@"未知类型 [%s] in %s at %d",__func__,__FILE__,__LINE__);
         }
     }
     
-    log.className = [array objectAtIndex:3];
-    log.methodName = [array objectAtIndex:4];
-    log.frameworkName = [array objectAtIndex:1];
-    log.memorryAddress = [array objectAtIndex:2];
+    self.className = [array objectAtIndex:3];
+    self.methodName = [array objectAtIndex:4];
+    self.frameworkName = [array objectAtIndex:1];
+    self.memorryAddress = [array objectAtIndex:2];
     
-    [log echo];
-    
-    return log;
+    [self echo];
 }
 
 - (void)echo

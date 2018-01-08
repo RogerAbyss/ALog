@@ -65,8 +65,14 @@
                 </div>
               </div>
             <h1 id='alog' class='heading'>ALog</h1>
-<pre class="highlight plaintext"><code>打印详细日志, 支持emoji！！
+<pre class="highlight plaintext"><code>打印详细日志
 </code></pre>
+
+<ul>
+<li>[x]支持emoji</li>
+<li>[x]支持原生类型输出utf8</li>
+<li>[x]debug下运行, 性能第一</li>
+</ul>
 <h2 id='' class='heading'>关于内存消耗</h2>
 
 <p>打印日志, 以类的方式定义每个打印, 比较消耗内存!<br>
@@ -239,9 +245,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)ALog(cm)ALogMessage:"></a>
-                    <a name="//apple_ref/objc/Method/+ALogMessage:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)ALog(cm)ALogMessage:">+ALogMessage:</a>
+                    <a name="/c:objc(cs)ALog(cm)ALogSomething:"></a>
+                    <a name="//apple_ref/objc/Method/+ALogSomething:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)ALog(cm)ALogSomething:">+ALogSomething:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -258,12 +264,12 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">ALogMessage</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span><span class="p">;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">ALogSomething</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">something</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">convenience</span> <span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="n">convenience</span> <span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">something</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>

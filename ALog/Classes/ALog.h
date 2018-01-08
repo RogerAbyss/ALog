@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #if DEBUG
-    #define Log(_smt_) [ALog ALogSomething:_smt_];
+#define Log(_smt_) [[ALog new] echo:_smt_];
 #else
     #define Log(_smt_)
 #endif
@@ -47,10 +47,11 @@
  通常使用宏 Log()方式调用比较美观
  ```
  */
-+ (instancetype)ALogSomething:(id)something;
+- (void)echo:(NSString *)something;
 
 /**
  打印
  */
 - (void)echo;
+
 @end
