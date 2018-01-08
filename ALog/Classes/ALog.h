@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #if DEBUG
-#define Log(_smt_) [[ALog new] echo:_smt_];
+#define Log(_smt_) [[ALogObj new] echo:_smt_];
 #else
     #define Log(_smt_)
 #endif
@@ -28,7 +28,7 @@
  请使用AControl类控制release版本的性能。<br>
  
  */
-@interface ALog : NSObject
+@interface ALogObj : NSObject
 
 /** [传入]输出信息 */
 @property (nonatomic, copy) NSString* message;

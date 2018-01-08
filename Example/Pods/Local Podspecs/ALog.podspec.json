@@ -1,8 +1,8 @@
 {
   "name": "ALog",
-  "version": "0.1.0",
-  "summary": "支持emoji的Log日志系统",
-  "description": "支持emoji的Log日志系统",
+  "version": "0.1.2",
+  "summary": "Abyss`s Log",
+  "description": "# Abyss`s Log\n\n- [x]支持emoji\n- [x]支持原生类型输出utf8\n- [x]debug下运行, 性能第一",
   "homepage": "https://github.com/RogerAbyss/ALog",
   "license": {
     "type": "MIT",
@@ -12,8 +12,8 @@
     "abyss": "roger_ren@qq.com"
   },
   "source": {
-    "git": "git@github.com:RogerAbyss//ALog.git",
-    "tag": "0.1.0"
+    "git": "git@github.com:RogerAbyss/ALog.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"

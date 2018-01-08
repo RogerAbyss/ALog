@@ -19,7 +19,7 @@
 }
 @end
 
-@implementation ALog
+@implementation ALogObj
 
 - (void)echo:(NSString *)something;
 {
