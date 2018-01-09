@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ALog.svg?style=flat)](http://cocoapods.org/pods/ALog)
 [![License](https://img.shields.io/cocoapods/l/ALog.svg?style=flat)](http://cocoapods.org/pods/ALog)
 [![Platform](https://img.shields.io/cocoapods/p/ALog.svg?style=flat)](http://cocoapods.org/pods/ALog)
+<img src="https://img.shields.io/badge/support-objective--C-brightgreen.svg">
 <br>
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/RogerAbyss/ALog.svg)](https://github.com/RogerAbyss/ALog)
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/RogerAbyss/ALog.svg)](https://github.com/RogerAbyss/ALog)
@@ -11,10 +12,18 @@
 [![license](https://img.shields.io/github/license/RogerAbyss/ALog.svg)](https://github.com/RogerAbyss/ALog/blob/master/LICENSE)
 <br>
 [![GitHub release](https://img.shields.io/github/release/RogerAbyss/ALog.svg)](https://github.com/RogerAbyss/ALog)
+<img src="https://img.shields.io/badge/support-Objective--C-brightgreen.svg">
+<img src="https://img.shields.io/badge/support-Swift-brightgreen.svg">
+<br>
+<img src="https://img.shields.io/badge/Github-rogerabyss-brightgreen.svg">
+<img src="https://img.shields.io/badge/%E7%A0%81%E4%BA%91-rogerabyss-orange.svg">
+<img src="https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-rogerabyss-blue.svg">
+<img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-rogerabyss-blue.svg">
+
 
 # 仍在内部测试出, 暂未发布
 
-## Introduction
+## :tada: Introduction
 
  - [x] emoji支持! 👌👌
  - [x] utf8支持! 中文输出日志
@@ -22,13 +31,8 @@
  - [x] 详细的文档!
  - [x] Objctive-C&Swift
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
+## :rocket: Installation
 
 ALog is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -37,10 +41,10 @@ it, simply add the following line to your Podfile:
 pod 'ALog'
 ```
 
-## Author
+## :construction_worker: Author
 
 roger_ren@qq.com
 
-## License
+## :globe_with_meridians: License
 
 ALog is available under the MIT license. See the LICENSE file for more info.
