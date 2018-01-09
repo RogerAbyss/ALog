@@ -12,6 +12,8 @@
 <br>
 [![GitHub release](https://img.shields.io/github/release/RogerAbyss/ALog.svg)](https://github.com/RogerAbyss/ALog)
 
+# 仍在内部测试出, 暂未发布
+
 ## Introduction
 
  - [x] emoji支持! 👌👌
