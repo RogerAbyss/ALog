@@ -14,7 +14,8 @@
 <img src="https://img.shields.io/badge/support-Swift-brightgreen.svg">
 <br>
 <a href="https://github.com/RogerAbyss"><img src="https://img.shields.io/badge/Github-rogerabyss-brightgreen.svg"></a>
-<a href="https://www.jianshu.com/u/d8d22723c6a5"><img src="https://img.shields.io/badge/%E7%A0%81%E4%BA%91-rogerabyss-orange.svg"></a>
+<a href="https://gitee.com/rogerabyss"><img src="https://img.shields.io/badge/%E7%A0%81%E4%BA%91-rogerabyss-orange.svg"></a>
+<a href="https://www.jianshu.com/u/d8d22723c6a5"><img src="https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-rogerabyss-orange.svg"></a>
 <a href="https://www.zhihu.com/people/ren-chao-3-42/activities"><img src="https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-rogerabyss-blue.svg"></a>
 <a href="https://juejin.im/user/594e25186fb9a06bc86e2a7d"><img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-rogerabyss-blue.svg"></a>
 
