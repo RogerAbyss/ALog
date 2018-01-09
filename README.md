@@ -17,7 +17,8 @@
  - [x] emoji支持! 👌👌
  - [x] utf8支持! 中文输出日志
  - [x] 性能第一! debug下运行
- - [x] 详细的文档! 
+ - [x] 详细的文档!
+ - [x] Objctive-C&Swift
 
 ## Example
 
