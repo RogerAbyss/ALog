@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALog'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Abyss`s Log'
 
 # This description is used to generate tags and improve search results.
@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ALog/Classes/**/*'
-  s.public_header_files = 'ALog/Classes/**/*.h'
+  s.public_header_files = 'ALog/Classes/**/*.h','ALog/Classes/ALog.swift'
   
   # s.resource_bundles = {
   #   'ALog' => ['ALog/Assets/*.png']

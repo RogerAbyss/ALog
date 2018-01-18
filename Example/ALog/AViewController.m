@@ -19,6 +19,7 @@
 {
     [super viewDidLoad];
     
+    Log(@":bug:哈哈")
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
