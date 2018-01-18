@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ALog/Classes/**/*'
-  s.public_header_files = 'ALog/Classes/**/*.h','ALog/Classes/ALog.swift'
+  s.public_header_files = 'ALog/Classes/**/*.h'
   
   # s.resource_bundles = {
   #   'ALog' => ['ALog/Assets/*.png']

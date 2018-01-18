@@ -1,6 +1,6 @@
 {
   "name": "ALog",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "summary": "Abyss`s Log",
   "description": "# Abyss`s Log\n\n- [x]支持emoji\n- [x]支持原生类型输出utf8\n- [x]debug下运行, 性能第一",
   "homepage": "https://github.com/RogerAbyss/ALog",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:RogerAbyss/ALog.git",
-    "tag": "0.1.2"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "8.0"
